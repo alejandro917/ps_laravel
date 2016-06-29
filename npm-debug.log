@@ -1,0 +1,187 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--global',
+1 verbose cli   'gulp' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'gulp', null ]
+7 verbose cache add spec gulp
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'gulp',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gulp',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed gulp@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for gulp
+11 info addNameTag [ 'gulp', 'latest' ]
+12 silly mapToRegistry name gulp
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gulp
+16 verbose addNameTag registry:https://registry.npmjs.org/gulp not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gulp
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 9:25:55 PM
+20 verbose request id 150f8272bbffd0e5
+21 verbose etag "ABLLAYS4LOJJ2096NKJJVL4YP"
+22 http request GET https://registry.npmjs.org/gulp
+23 http 304 https://registry.npmjs.org/gulp
+24 verbose headers { date: 'Sat, 25 Jun 2016 02:25:56 GMT',
+24 verbose headers   via: '1.1 varnish',
+24 verbose headers   'cache-control': 'max-age=300',
+24 verbose headers   etag: '"ABLLAYS4LOJJ2096NKJJVL4YP"',
+24 verbose headers   age: '231',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   'x-served-by': 'cache-atl6240-ATL',
+24 verbose headers   'x-cache': 'HIT',
+24 verbose headers   'x-cache-hits': '1',
+24 verbose headers   'x-timer': 'S1466821556.007125,VS0,VE0',
+24 verbose headers   vary: 'Accept-Encoding' }
+25 silly get cb [ 304,
+25 silly get   { date: 'Sat, 25 Jun 2016 02:25:56 GMT',
+25 silly get     via: '1.1 varnish',
+25 silly get     'cache-control': 'max-age=300',
+25 silly get     etag: '"ABLLAYS4LOJJ2096NKJJVL4YP"',
+25 silly get     age: '231',
+25 silly get     connection: 'keep-alive',
+25 silly get     'x-served-by': 'cache-atl6240-ATL',
+25 silly get     'x-cache': 'HIT',
+25 silly get     'x-cache-hits': '1',
+25 silly get     'x-timer': 'S1466821556.007125,VS0,VE0',
+25 silly get     vary: 'Accept-Encoding' } ]
+26 verbose etag https://registry.npmjs.org/gulp from cache
+27 verbose get saving gulp to /Users/MacDeAlejo/.npm/registry.npmjs.org/gulp/.cache.json
+28 verbose correctMkdir /Users/MacDeAlejo/.npm correctMkdir not in flight; initializing
+29 silly addNameTag next cb for gulp with tag latest
+30 silly addNamed gulp@3.9.1
+31 verbose addNamed "3.9.1" is a plain semver version for gulp
+32 silly cache afterAdd gulp@3.9.1
+33 verbose afterAdd /Users/MacDeAlejo/.npm/gulp/3.9.1/package/package.json not in flight; writing
+34 verbose correctMkdir /Users/MacDeAlejo/.npm correctMkdir not in flight; initializing
+35 verbose afterAdd /Users/MacDeAlejo/.npm/gulp/3.9.1/package/package.json written
+36 silly install resolved [ { name: 'gulp',
+36 silly install resolved     description: 'The streaming build system',
+36 silly install resolved     version: '3.9.1',
+36 silly install resolved     homepage: 'http://gulpjs.com',
+36 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/gulpjs/gulp.git' },
+36 silly install resolved     author:
+36 silly install resolved      { name: 'Fractal',
+36 silly install resolved        email: 'contact@wearefractal.com',
+36 silly install resolved        url: 'http://wearefractal.com/' },
+36 silly install resolved     tags: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+36 silly install resolved     files: [ 'index.js', 'lib', 'bin', 'completion', 'gulp.1' ],
+36 silly install resolved     bin: { gulp: './bin/gulp.js' },
+36 silly install resolved     man: [ 'gulp.1' ],
+36 silly install resolved     dependencies:
+36 silly install resolved      { archy: '^1.0.0',
+36 silly install resolved        chalk: '^1.0.0',
+36 silly install resolved        deprecated: '^0.0.1',
+36 silly install resolved        'gulp-util': '^3.0.0',
+36 silly install resolved        interpret: '^1.0.0',
+36 silly install resolved        liftoff: '^2.1.0',
+36 silly install resolved        minimist: '^1.1.0',
+36 silly install resolved        orchestrator: '^0.3.0',
+36 silly install resolved        'pretty-hrtime': '^1.0.0',
+36 silly install resolved        semver: '^4.1.0',
+36 silly install resolved        tildify: '^1.0.0',
+36 silly install resolved        v8flags: '^2.0.2',
+36 silly install resolved        'vinyl-fs': '^0.3.0' },
+36 silly install resolved     devDependencies:
+36 silly install resolved      { coveralls: '^2.7.0',
+36 silly install resolved        eslint: '^1.7.3',
+36 silly install resolved        'eslint-config-gulp': '^2.0.0',
+36 silly install resolved        'graceful-fs': '^3.0.0',
+36 silly install resolved        istanbul: '^0.3.0',
+36 silly install resolved        jscs: '^2.3.5',
+36 silly install resolved        'jscs-preset-gulp': '^1.0.0',
+36 silly install resolved        'marked-man': '^0.1.3',
+36 silly install resolved        mkdirp: '^0.5.0',
+36 silly install resolved        mocha: '^2.0.1',
+36 silly install resolved        'mocha-lcov-reporter': '^0.0.1',
+36 silly install resolved        q: '^1.0.0',
+36 silly install resolved        rimraf: '^2.2.5',
+36 silly install resolved        should: '^5.0.1' },
+36 silly install resolved     scripts:
+36 silly install resolved      { prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+36 silly install resolved        lint: 'eslint . && jscs *.js bin/ lib/ test/',
+36 silly install resolved        pretest: 'npm run lint',
+36 silly install resolved        test: 'mocha --reporter spec',
+36 silly install resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+36 silly install resolved     engines: { node: '>= 0.9' },
+36 silly install resolved     license: 'MIT',
+36 silly install resolved     gitHead: '9c14e3a13a73a32e424f144d62566671b2fcdbed',
+36 silly install resolved     bugs: { url: 'https://github.com/gulpjs/gulp/issues' },
+36 silly install resolved     _id: 'gulp@3.9.1',
+36 silly install resolved     _shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+36 silly install resolved     _from: 'gulp@latest',
+36 silly install resolved     _npmVersion: '2.14.14',
+36 silly install resolved     _nodeVersion: '0.10.41',
+36 silly install resolved     _npmUser: { name: 'phated', email: 'blaine@iceddev.com' },
+36 silly install resolved     maintainers: [ [Object], [Object] ],
+36 silly install resolved     dist:
+36 silly install resolved      { shasum: '571ce45928dd40af6514fc4011866016c13845b4',
+36 silly install resolved        tarball: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz' },
+36 silly install resolved     _npmOperationalInternal:
+36 silly install resolved      { host: 'packages-6-west.internal.npmjs.com',
+36 silly install resolved        tmp: 'tmp/gulp-3.9.1.tgz_1454957415500_0.15343931876122952' },
+36 silly install resolved     directories: {},
+36 silly install resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.9.1.tgz',
+36 silly install resolved     readme: 'ERROR: No README data found!' } ]
+37 info install gulp@3.9.1 into /usr/local/lib
+38 info installOne gulp@3.9.1
+39 verbose installOne of gulp to /usr/local/lib not in flight; installing
+40 verbose correctMkdir /Users/MacDeAlejo/.npm/_locks correctMkdir not in flight; initializing
+41 verbose lock using /Users/MacDeAlejo/.npm/_locks/gulp-709d00e5d169ceb3.lock for /usr/local/lib/node_modules/gulp
+42 silly install write writing gulp 3.9.1 to /usr/local/lib/node_modules/gulp
+43 verbose unbuild lib/node_modules/gulp
+44 silly gentlyRm /usr/local/lib/node_modules/gulp is being purged from base /usr/local
+45 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gulp
+46 verbose tar unpack /Users/MacDeAlejo/.npm/gulp/3.9.1/package.tgz
+47 verbose tar unpacking to /usr/local/lib/node_modules/gulp
+48 silly gentlyRm /usr/local/lib/node_modules/gulp is being purged
+49 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gulp
+50 silly gunzTarPerm modes [ '755', '644' ]
+51 error tar.unpack untar error /Users/MacDeAlejo/.npm/gulp/3.9.1/package.tgz
+52 verbose unlock done using /Users/MacDeAlejo/.npm/_locks/gulp-709d00e5d169ceb3.lock for /usr/local/lib/node_modules/gulp
+53 verbose fstream_path /usr/local/lib/node_modules/gulp
+54 verbose fstream_type Directory
+55 verbose fstream_class DirWriter
+56 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/gulp'
+56 verbose stack     at Error (native)
+57 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+57 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+57 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+58 verbose cwd /Users/MacDeAlejo/Sites/ps
+59 error Darwin 14.5.0
+60 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--global" "gulp"
+61 error node v4.4.0
+62 error npm  v2.14.20
+63 error path /usr/local/lib/node_modules/gulp
+64 error code EACCES
+65 error errno -13
+66 error syscall mkdir
+67 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/gulp'
+67 error     at Error (native)
+67 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/gulp']
+67 error   errno: -13,
+67 error   code: 'EACCES',
+67 error   syscall: 'mkdir',
+67 error   path: '/usr/local/lib/node_modules/gulp',
+67 error   fstream_type: 'Directory',
+67 error   fstream_path: '/usr/local/lib/node_modules/gulp',
+67 error   fstream_class: 'DirWriter',
+67 error   fstream_stack:
+67 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+67 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+67 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+68 error Please try running this command again as root/Administrator.
+69 verbose exit [ -13, true ]
+70 verbose unbuild lib/node_modules/gulp
+71 silly gentlyRm /usr/local/lib/node_modules/gulp is being purged from base /usr/local
+72 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/gulp
