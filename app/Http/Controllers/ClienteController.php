@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ClienteController extends Controller {
 
 	public function index(){
-		return view('clientes.fetchCliente');
+		return view('clientes.index');
 
 	}
 

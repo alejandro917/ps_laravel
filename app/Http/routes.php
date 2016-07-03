@@ -35,16 +35,52 @@ get('/api/clientes', function (){
 post('/api/clientes', function () {
 	return App\Cliente::create(Request::all());
 });
+
 get('/api/clientes/{id}', function ($id) {
 	return App\Cliente::findOrFail($id);
 });
+
 patch('/api/clientes/{id}', function ($id) {
 	App\Cliente::findOrFail($id)->update(Request::all());
 	return Response::json(Request::all());
 });
+
 delete('/api/clientes/{id}', function($id) {
 	return App\Cliente::destroy($id);
 });
+
+Route::Resource('/facturas', 'FacturaController');
+
+get('/api/facturas/', function (){
+	return App\Factura::all();
+});
+
+get('/api/facturas/{id}', function ($id) {
+	return App\Factura::findOrFail($id);
+});
+post('/api/facturas', function () {
+	return App\Factura::create(Request::all());
+});
+
+patch('/api/facturas/{id}', function ($id) {
+	App\Factura::findOrFail($id)->update(Request::all());
+	return Response::json(Request::all());
+});
+patch('/api/facturas/productos/{id}', function ($numero_factura) {
+	App\FacturaProducto::findOrFail($numero_factura)->update(Request::all());
+	return Response::json(Request::all());
+});
+post('/api/facturas/productos', function () {
+	return App\FacturaProducto::create(Request::all());
+});
+
+get('/api/facturas/productos/{id}', function ($id) {
+	return App\FacturaProducto::where('factura_id', '=', $id)->get();
+});
+delete('/api/facturas/productos/{id}', function($id) {
+	return App\FacturaProducto::destroy($id);
+});
+
 
 /*
 
